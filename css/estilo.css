@@ -11,6 +11,7 @@ body {
 
     background: rgba(255, 255, 255, 0.6); 
     border-radius: 50px;
+    margin-top: -60px;
 }
 
 input {
@@ -25,6 +26,7 @@ label {
     font-size: 20px;
     font-weight: bold;
     color: black;
+    font-family: 'Rubik', sans-serif;
 
 }
 .navbar-custom {
@@ -33,13 +35,40 @@ label {
     padding-bottom: 20px;
     color: white;
     font-size: 20px;
+    text-align: center;
 
     background-color: rgb(255, 123, 0);
 }
+span {
+    margin: 20px 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+}
 
 h1 {
+    font-size: 28px;
+    margin: 20px 20px;
     color: black;
-    text-shadow: 2px 2px #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+button {
+
+    background-color: rgb(255, 123, 0);
+    color: white;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 200px;
+    font-family: 'Rubik', sans-serif;
+
+
+
 }
 
 output {

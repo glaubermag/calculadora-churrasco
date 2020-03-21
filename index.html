@@ -18,6 +18,7 @@
 
     <!-- Place your stylesheet here-->
     <link href="/css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
     <script type="text/javascript">
 
@@ -26,7 +27,8 @@
             var pessoas = document.calcform.pessoas.value;
             var vegetarianos = document.calcform.vegetarianos.value;
             var horas = document.calcform.horas.value;
-            var salada = 0;
+            var salada = 0, cerveja = 0, carne = 0, refrigerante = 0;
+
 
             if (vegetarianos >= 1) {
                 pessoas -= vegetarianos;
@@ -53,7 +55,7 @@
 
 <body>
     <nav class="navbar-custom">
-        <span>Churrascômetro </span>
+        <span> Churrascômetro </span>
     </nav>
 
     <main role="main" class="container">
@@ -62,7 +64,7 @@
             <div class="retangulo">
                 <form name="calcform" method="post" action="">
                     <fieldset>
-                        <h1> Churrascômetro </h1>
+                        <h1> Bora organizar aquele Churrasquinho? </h1>
                         <label for="pessoas">Quantos pessoas?:</label><br />
                         <input type="text" name="pessoas" id="pessoas" /> <br />
 
