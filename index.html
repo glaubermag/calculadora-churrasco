@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Calculadora Churrasco</title>
+
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Place your stylesheet here-->
+    <link href="/css/estilo.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+
+
+        function calcular(oper) {
+            var pessoas = document.calcform.pessoas.value;
+            var vegetarianos = document.calcform.vegetarianos.value;
+            var horas = document.calcform.horas.value;
+            var salada = 0;
+
+            if (vegetarianos >= 1) {
+                pessoas -= vegetarianos;
+                salada = vegetarianos * 100 * horas;
+                cerveja = (vegetarianos * horas * 365);
+                refrigerante = (vegetarianos * horas * 100);
+            }
+
+            if (pessoas >= 1) {
+                carne = (pessoas * horas * 50);
+                cerveja += (pessoas * horas * 365);
+                salada += pessoas * 50 * horas;
+                refrigerante = (pessoas * horas * 100);
+            }
+            document.calcform.carne.value = carne;
+            document.calcform.salada.value = salada;
+            document.calcform.refrigerante.value = refrigerante;
+            document.calcform.cerveja.value = cerveja;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar-custom">
+        <span>Churrascômetro </span>
+    </nav>
+
+    <main role="main" class="container">
+
+        <div class="text-center mt-5 pt-5">
+            <div class="retangulo">
+                <form name="calcform" method="post" action="">
+                    <fieldset>
+                        <h1> Churrascômetro </h1>
+                        <label for="pessoas">Quantos pessoas?:</label><br />
+                        <input type="text" name="pessoas" id="pessoas" /> <br />
+
+                        <label for="vegetarianos">Quantas são vegetarianxs? </label><br />
+                        <input type="text" name="vegetarianos" id="vegetarianos" /> <br />
+
+                        <label for="horas">Quantas horas de churrasco? </label> <br />
+                        <input type="text" name="horas" id="horas" /> <br />
+
+
+                        <button type="button" value="Calcular" class="botao"
+                            onClick="calcular(document.calcform.carne.value)"> Calcular </button>
+                        <br />
+
+                        <h1> Você irá precisar de:</h1>
+
+                        <label for="carne">Carne (gramas):</label>
+                        <output name="carne" id="carne"></output><br />
+                        <label for="cerveja">Cerveja (ml):</label>
+                        <output name="cerveja" id="cerveja"></output><br />
+                        <label for="salada">Salada (gramas):</label>
+                        <output name="salada" id="salada"></output><br />
+                        <label for="refrigerante">Refrigerante (ml):</label>
+                        <output name="refrigerante" id="refrigerante"></output>
+                    </fieldset>
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

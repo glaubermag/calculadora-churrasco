@@ -1,0 +1,50 @@
+body {
+
+    background: url("/img/bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.retangulo {
+
+    background: rgba(255, 255, 255, 0.6); 
+    border-radius: 50px;
+}
+
+input {
+
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background: rgba(255, 123, 0, 0.465); 
+}
+label {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+}
+.navbar-custom {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 20px;
+
+    background-color: rgb(255, 123, 0);
+}
+
+h1 {
+    color: black;
+    text-shadow: 2px 2px #fff;
+}
+
+output {
+
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
