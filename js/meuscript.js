@@ -1,5 +1,3 @@
-
-
 function calcular(oper) {
     var pessoas = document.calcform.pessoas.value;
     var vegetarianos = document.calcform.vegetarianos.value;
